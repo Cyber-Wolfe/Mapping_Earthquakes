@@ -2,7 +2,22 @@
 console.log("working");
 
 // Create the map object with a center and zoom level.
-let map = L.map('mapid').setView([30, 30], 2);
+let map = L.map('mapid').setView([34.0522, -118.2437], 14);
+
+// // Marker Code
+// let marker = L.marker([34.0522, -118.2437]).addTo(map);
+// L.circle([34.0522, -118.2437], {
+//   radius: 100
+// }).addTo(map);
+
+// // Alternatively can use 
+// L.circleMarker([34.0522, -118.2437]).addTo(map);
+
+L.circleMarker([34.0522, -118.2437], {
+  radius: 300,
+  color: 'black',
+  fillColor: '#ffffa1'
+}).addTo(map);
 
 // We create the tile layer that will be the background of our map.
 // replace streets-v11 with: 
