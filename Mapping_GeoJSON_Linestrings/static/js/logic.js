@@ -56,4 +56,8 @@ L.geoJSON(data, {
   }
 })
 .addTo(map);
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> f4423acc1d687b84deb3c138fe88c8a7f0e2c718
